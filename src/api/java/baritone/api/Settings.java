@@ -1175,6 +1175,12 @@ public final class Settings {
     public final Setting<Color> colorSelectionPos1 = new Setting<>(Color.BLACK);
 
     /**
+     * Enable smooth aim while mining/building. Aim is updated per tick (20 = 1 second)
+     * set to 1 to disable.
+     */
+    public final Setting<Float> smoothAim = new Setting<>(0.5f);
+
+    /**
      * The color of the selection pos 2
      */
     public final Setting<Color> colorSelectionPos2 = new Setting<>(Color.ORANGE);
